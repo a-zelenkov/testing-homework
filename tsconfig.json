@@ -9,9 +9,7 @@
         "jsx": "react",
         "moduleResolution": "node"
     },
-    "include": [
-        "src"
-    ],
+    "include": ["src", "test"],
     "ts-node": {
         "compilerOptions": {
             "module": "CommonJS"
