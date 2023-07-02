@@ -5,7 +5,8 @@ import { CheckoutResponse } from '../common/types';
 import { ExampleStore } from './data';
 
 export function getBugId(req: express.Request) {
-    return Number(req.query.bug_id) || 0;
+    // можешь просто возвращать номер интересующего бага из этой функции
+    return Number(req.query.bug_id) || 0; // #BUG_ID_DECLARATION
 }
 
 const indexHtmlContent = readFileSync(join(__dirname, '..', '..', "dist", "index.html")).toString();
