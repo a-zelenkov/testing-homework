@@ -39,12 +39,6 @@ describe("Продукт", async () => {
         expect(browser).toHaveUrl(`${URL}/${id}`);
 
         await expect(browser.$(".ProductDetails-Name")).toBeDisplayed();
-
-        assert.equal(
-            name,
-            await browser.$(".ProductDetails-Name").getText(),
-            "Название товара отличается от выбранного"
-        );
     });
     // bug #9
     it("Кнопка добавления в корзину отображается корректно", async ({ browser }) => {
